@@ -1,0 +1,74 @@
+.main{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+
+    .image{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        
+
+        img{
+            width: 100%;
+            height: 100vh;
+        }
+    }
+
+    .regform{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+
+        h1{
+            text-align: center;
+            color: #001F62;
+        }
+
+        form{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #fff;
+
+            input{
+                width: 250px;
+                height: 40px;
+                border: 1px solid #001F62;
+                border-radius: 5px;
+                margin: 10px 0;
+                padding: 0 10px;
+            }
+
+            .submit{
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+            button{
+                width: 90px;
+                height: 40px;
+                border: 1px solid #001F62;
+                border-radius: 5px;
+                background-color: #001F62;
+                color: white;
+                margin: 10px 0;
+                padding: 0 10px;
+            }
+        }
+        
+    }
+
+}

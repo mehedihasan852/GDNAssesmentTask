@@ -1,0 +1,51 @@
+<!-- users list -->
+<div class="main">
+    <div class="mainBody">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Users List</h4>
+                        </div>
+                        <div class="add">
+                            <button (click)="adduser()">Add</button>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class=" text-primary">
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Email
+                                        </th>
+                                        <th>
+                                            Actions
+                                        </th>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let user of users">
+                                            <td>
+                                                {{user.name}}
+                                            </td>
+                                            <td>
+                                                {{user.email}}
+                                            </td>
+                                            
+                                            <td class="actiontd">
+                                                <button class="editbutton" (click)="editUser(user)">Edit</button>
+                                                <button class="deletebutton" (click)="deleteUser(user.id)">Delete</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

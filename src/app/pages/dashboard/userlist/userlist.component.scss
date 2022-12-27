@@ -1,0 +1,105 @@
+.main{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+
+    .add{
+        display: grid;
+        justify-content: end;
+        margin-bottom: 10px;
+        button{
+            background-color: #3b82f6;
+            border: 1px solid #3b82f6;
+            color: #ffffff;
+
+            &:hover{
+                background-color: #ffffff;
+                border: 1px solid #2563eb;
+                color: #2563eb;
+            }
+        }
+    }
+
+    button{
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #000;
+        cursor: pointer;
+        margin: 0 5px;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background-color: #000;
+            color: #fff;
+        }
+    }
+    .card-title{
+        font-size: 20px;
+        font-weight: 600;
+        color: #000;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .table{
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: 1px solid rgb(192, 192, 192);
+        border-radius: 10px;
+        thead{
+            tr{
+                th{
+                    padding: 10px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #000;
+                    text-align: left;
+                    border-bottom: 2px solid rgb(192, 192, 192);
+                    
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    padding: 10px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #000;
+                    text-align: left;
+                    border-bottom: 1px solid rgb(192, 192, 192);
+                    text-align: center;
+                }
+                .actiontd{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .editbutton{
+        background-color: #3b82f6;
+        border: 1px solid #3b82f6;
+        color: #ffffff;
+        &:hover{
+            background-color: #ffffff;
+            border: 1px solid #2563eb;
+            color: #2563eb;
+        }
+    }
+    .deletebutton{
+        background-color: #ef4444;
+        border: 1px solid #ef4444;
+        color: #ffffff;
+        &:hover{
+            background-color: #ffffff;
+            border: 1px solid #ef4444;
+            color: #ef4444;
+        }
+    }
+}

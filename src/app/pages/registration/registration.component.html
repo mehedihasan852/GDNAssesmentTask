@@ -1,0 +1,17 @@
+<div class="main">
+    <div class="image">
+        <img src="../../../assets/images/login.png" alt="">
+    </div>
+    <div class="regform">
+        <div class="boxing">
+            <h1>Register</h1>
+            <form [formGroup]="dataForm" (ngSubmit)="onSubmit()">
+                <input type="text" placeholder="Name" formControlName="name"/>
+                <input type="email" placeholder="Email" formControlName="email"/>
+                <input type="password" placeholder="Password" formControlName="password"/>
+                <div class="submit"><button type="submit" class="btn btn-primary">Register</button></div>
+                <p class="message">Already registered? <a routerLink="/login">Sign In</a></p>
+            </form>
+        </div>
+    </div>
+</div>
